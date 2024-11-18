@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, hsl(220, 50%, 90%), hsl(220, 40%, 85%));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#calculator {
+    background-color: hsl(0, 0%, 25%);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#display {
+    width: 95%;
+    height: 60px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: right;
+    border: none;
+    background: hsl(0, 0%, 15%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: inset 0 -3px 5px rgba(0, 0, 0, 0.4);
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    background: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+button:hover {
+    background: hsl(0, 0%, 35%);
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Operator Buttons */
+.operator-btn {
+    background: hsl(35, 80%, 50%);
+    color: white;
+    box-shadow: 0 4px 6px rgba(255, 180, 50, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.operator-btn:hover {
+    background: hsl(35, 85%, 55%);
+}
+
+.operator-btn:active {
+    background: hsl(35, 75%, 45%);
+}
+
+/* Equals Button */
+.equals-btn {
+    background: hsl(120, 60%, 40%);
+    color: white;
+    grid-column: span 2;
+    box-shadow: 0 4px 6px rgba(50, 200, 100, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.equals-btn:hover {
+    background: hsl(120, 65%, 45%);
+}
+
+.equals-btn:active {
+    background: hsl(120, 55%, 35%);
+}
+
+/* Memory Buttons */
+.memory-btn {
+    background: hsl(200, 60%, 45%);
+    color: white;
+    box-shadow: 0 4px 6px rgba(50, 100, 200, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.memory-btn:hover {
+    background: hsl(200, 65%, 50%);
+}
+
+.memory-btn:active {
+    background: hsl(200, 55%, 40%);
+}
+
+/* Percentage Button */
+.percent-btn {
+    background: hsl(50, 80%, 55%);
+    color: black;
+    box-shadow: 0 4px 6px rgba(200, 200, 50, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.percent-btn:hover {
+    background: hsl(50, 85%, 60%);
+}
+
+.percent-btn:active {
+    background: hsl(50, 75%, 50%);
+}
+
+/* Square Root Button */
+.sqrt-btn {
+    background: hsl(340, 60%, 50%);
+    color: white;
+    box-shadow: 0 4px 6px rgba(200, 50, 100, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.sqrt-btn:hover {
+    background: hsl(340, 65%, 55%);
+}
+
+.sqrt-btn:active {
+    background: hsl(340, 55%, 45%);
+}
